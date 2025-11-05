@@ -3,7 +3,10 @@ jdk:
 
 before_install:
   - echo "🚀 Building aliyun-oss multi-module project with Java 17 on JitPack"
-  - export MAVEN_VERSION=3.6.3  # Specify a compatible Maven version
+  # 下载并安装 Maven 3.6.3
+  - curl -sL https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz | tar xz -C /tmp
+  - export MAVEN_HOME=/tmp/apache-maven-3.6.3
+  - export PATH=$MAVEN_HOME/bin:$PATH
 
 install:
   - mvn clean install -DskipTests
