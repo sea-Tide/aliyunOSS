@@ -3,6 +3,7 @@ jdk:
 
 before_install:
   - echo "🚀 Building aliyun-oss multi-module project with Java 17 on JitPack"
+  - export MAVEN_VERSION=3.6.3  # Specify a compatible Maven version
 
 install:
   - mvn clean install -DskipTests
