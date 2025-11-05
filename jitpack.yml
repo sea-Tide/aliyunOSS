@@ -1,2 +1,8 @@
 jdk:
   - openjdk17
+
+before_install:
+  - echo "🚀 Building aliyun-oss-spring-boot-starter with Java 17 on JitPack"
+
+install:
+  - mvn -pl aliyun-oss-spring-boot-starter -am clean install -DskipTests
