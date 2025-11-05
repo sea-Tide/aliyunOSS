@@ -12,8 +12,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>aliyun-oss-spring-boot-autoconfigure</module>
-        <module>aliyun-oss-spring-boot-starter</module>
+        <module>aliyunOSS/aliyun-oss-spring-boot-autoconfigure</module>
+        <module>aliyunOSS/aliyun-oss-spring-boot-starter</module>
     </modules>
 
     <properties>
