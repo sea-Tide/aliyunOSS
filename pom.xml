@@ -8,12 +8,12 @@
 
     <groupId>com.aliyun.oss</groupId>
     <artifactId>aliyun-oss-spring-boot-parent</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.6</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>aliyunOSS/aliyun-oss-spring-boot-autoconfigure</module>
-        <module>aliyunOSS/aliyun-oss-spring-boot-starter</module>
+        <module>aliyun-oss-spring-boot-autoconfigure</module>
+        <module>aliyun-oss-spring-boot-starter</module>
     </modules>
 
     <properties>
