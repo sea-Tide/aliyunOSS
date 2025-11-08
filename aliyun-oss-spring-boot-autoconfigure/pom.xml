@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- 继承的父类pom文件 -->
+    <!-- 继承的父类pom文件  -->
     <parent>
         <groupId>com.aliyun.oss</groupId>
         <artifactId>aliyunOSS-parent</artifactId>
