@@ -1,0 +1,10 @@
+jdk:
+  - openjdk17 # 使用jdk17运行
+
+before_install:
+  - curl -sL https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz | tar xz -C /tmp # 下载maven解压
+  - export MAVEN_HOME=/tmp/apache-maven-3.6.3 # 设置maven环境变量
+  - export PATH=$MAVEN_HOME/bin:$PATH # 添加maven环境变量
+
+install:
+  - mvn -pl aliyun-oss-spring-boot-starter -am clean install -DskipTests # 清理并且安装项目，-DskipTests跳过测试，加速构建
