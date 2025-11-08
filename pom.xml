@@ -3,14 +3,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- 继承的父类pom文件 -->
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.7</version>
-        <relativePath/>
-    </parent>
-
     <!-- 当前pom文件基本信息 -->
     <groupId>com.aliyun.oss</groupId>
     <artifactId>aliyunOSS-parent</artifactId>
@@ -27,15 +19,6 @@
         <module>aliyun-oss-spring-boot-autoconfigure</module>
         <module>aliyun-oss-spring-boot-starter</module>
     </modules>
-
-    <!-- 父类公共依赖项，子类会进行依赖传递 -->
-    <dependencies>
-        <!-- lombok依赖 -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-    </dependencies>
 
     <build>
         <plugins>

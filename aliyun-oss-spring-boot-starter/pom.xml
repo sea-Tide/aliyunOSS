@@ -30,6 +30,12 @@
             <version>3.0.5</version>
         </dependency>
 
+        <!-- lombok依赖 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
         <!-- 引入autoconfigure模块 -->
         <dependency>
             <groupId>com.aliyun.oss</groupId>

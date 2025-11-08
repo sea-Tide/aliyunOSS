@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
 
-    <!-- 当前pom文件基本信息-->
+    <!-- 当前pom文件基本信息，其中groupId会从父类继承过来 -->
     <groupId>com.aliyun.oss</groupId>
     <artifactId>aliyun-oss-spring-boot-autoconfigure</artifactId>
     <version>1.0.0</version>
@@ -28,6 +28,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
             <version>3.0.5</version>
+        </dependency>
+        
+        <!-- lombok依赖 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
 
         <!-- spring web启动依赖 -->
