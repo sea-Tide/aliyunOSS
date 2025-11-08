@@ -5,14 +5,13 @@
 
     <!-- 继承的父类pom文件 -->
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.7</version>
-        <relativePath/>
+        <groupId>com.aliyun.oss</groupId>
+        <artifactId>aliyunOSS-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <!-- 当前pom文件基本信息，其中groupId会从父类继承过来 -->
-    <groupId>com.aliyun.oss</groupId>
     <artifactId>aliyun-oss-spring-boot-autoconfigure</artifactId>
     <version>1.0.0</version>
 
@@ -28,12 +27,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
             <version>3.0.5</version>
-        </dependency>
-        
-        <!-- lombok依赖 -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
         </dependency>
 
         <!-- spring web启动依赖 -->
